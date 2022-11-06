@@ -50,7 +50,7 @@ class Listing(models.Model):
     )
     color = models.CharField(max_length=20, choices=choices_color)
     fabrication_year = models.IntegerField()
-    kilometers = models.IntegerField()
+    mileage = models.IntegerField()
     price = models.IntegerField()
     location = models.CharField(max_length=30)
     date_posted = models.DateField(default=timezone.now)
